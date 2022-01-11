@@ -1,0 +1,85 @@
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    border-bottom: #777;
+
+    color: black;
+    font-weight: lighter;
+    font-size: 300%;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    background-image:url(img/Rectangle.svg);
+    color: white;
+    cursor: pointer;
+    padding: 1% 1%;
+    width: 40%;
+    border: none;
+    outline: none;
+    transition: 1s;
+    margin: auto;
+    border-radius: 25px;
+    margin-bottom: 2%;
+    font-family: "Montserrat";
+    font-size: 60%;
+    margin-top:-11%;
+    text-align: left;
+    
+
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   text-align: left;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+#faq img{
+    
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: #f89f04;
+    display: none;
+    overflow: hidden;
+    color: #444;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 35px;
+    font-family: "Montserrat";
+    font-size: 60%;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
